@@ -1,0 +1,38 @@
+/* Add this to your Sidebar.css */
+
+.search {
+  padding: 10px;
+}
+
+.search input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.recent-chats {
+  padding: 10px;
+}
+
+.recent-chats h3 {
+  margin: 0 0 10px;
+}
+
+.recent-chats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-chats li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

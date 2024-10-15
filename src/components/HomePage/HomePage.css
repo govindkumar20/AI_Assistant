@@ -1,0 +1,138 @@
+/* src/components/HomePage/HomePage.css */
+
+.home-page {
+    padding: 20px;
+    flex: 1;
+    margin-left: 100px; /* Set left margin equal to the sidebar width */
+    margin-bottom: 80px; /* Space for the input capsule */
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+.welcome-section {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', sans-serif; /* Use the new font */
+    font-size: 48px; /* Increased font size for the heading */
+    color: rgb(47, 38, 38); /* Ensure text color is white */
+    width: 75%;
+}
+
+.welcome-section p {
+    font-family: 'Roboto', sans-serif; /* Use the new font */
+    font-size: 48px; /* Increased font size for the paragraph */
+    margin: 0; /* Remove default margin */
+}
+
+.responses-container {
+    margin-bottom: 80px; /* Space above input capsule */
+    border-radius: 30px;
+    border-radius: 30px;
+}
+
+.response-capsule {
+    background-color: rgba(255, 255, 255, 0.1);/* Grey background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the capsule */
+    margin: 10px 0; /* Space between capsules */
+    max-width: 80%; /* Limit width */
+    word-wrap: break-word; /* Allow text to wrap */
+    color: rgb(255, 255, 255); /* Text color */
+}
+
+/* Existing styles for input capsule and buttons remain unchanged */
+.input-capsule {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    position: fixed; /* Position fixed to the bottom */
+    bottom: 20px; /* Distance from the bottom */
+    left: 500px; /* Distance from the left to account for sidebar width */
+    right: 10px; /* Distance from the right */
+    max-width: calc(70% - 20px); /* Set a maximum width for the capsule */
+    width: calc(70% - 300px - 20px); /* Adjusted width to be smaller */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    padding: 3px; /* Further reduced padding for a smaller capsule */
+    border-radius: 50px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Reduced shadow for a more subtle effect */
+}
+
+.input-field {
+    flex: 1; /* Allow input to take remaining space */
+    padding: 10px; /* Padding for the input */
+    border: none; /* No border */
+    border-radius: 60px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.3); /* Background color */
+    color: white; /* Text color */
+    margin-right: 10px; /* Space between input and icons */
+}
+
+.send-button {
+    background-color:transparent; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.clear-button {
+    background-color:blue; /* Red background color for clear button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 20px; /* Space between clear and send buttons */
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #5c6bc0, #ab47bc, #ff4081); /* Adjust colors as needed */
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Vendor prefix for Safari */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent for Safari */
+    color: transparent; /* Make the text color transparent for other browsers */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+/* src/components/HomePage/HomePage.css */
+.input-capsule {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    position: fixed; /* Position fixed to the bottom */
+    bottom: 20px; /* Distance from the bottom */
+    left: 500px; /* Distance from the left to account for sidebar width */
+    right: 10px; /* Distance from the right */
+    max-width: calc(70% - 20px); /* Set a maximum width for the capsule */
+    width: calc(70% - 300px - 20px); /* Adjusted width to be smaller */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    padding: 3px; /* Further reduced padding for a smaller capsule */
+    border-radius: 40px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Reduced shadow for a more subtle effect */
+    color: white;
+}
+
+/* New styles for chat controls */
+.chat-controls {
+    display: flex; /* Align controls horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-left: auto; /* Push controls to the right */
+}
+
+
+.mic-button, .upload-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between buttons */
+}
+
+.mic-icon, .upload-icon {
+    width: 20px; /* Set the width of the icons */
+    height: 20px; /* Set the height of the icons */
+    filter: brightness(0) invert(1); /* Change icon color to white */
+}

@@ -1,0 +1,33 @@
+/* src/App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black; /* Set the background color to black */
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    margin-left: 250px; /* Adjust margin to account for the sidebar width */
+    height: 100%; /* Ensure it takes full height */
+}
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure it takes full height */
+    background-color: black; /* Set background color to black */
+    color: white; /* Default text color */
+}
+
+/* New gradient text style */
+.gradient-text {
+    background: linear-gradient(90deg, #00f260, #0575e6); /* Example gradient colors */
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Vendor prefix for WebKit browsers (like Safari) */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient for Safari */
+    color: transparent; /* Fallback for other browsers */
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center; /* Center text */
+}

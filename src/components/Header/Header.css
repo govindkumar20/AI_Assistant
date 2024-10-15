@@ -1,0 +1,18 @@
+/* src/components/Header/Header.css */
+
+.header {
+    background-color: rgba(0, 0, 0, 0.1); /* Make the background transparent */
+    padding: 10px; /* Adjust padding as needed */
+    color: white; /* Keep the text color white */
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', sans-serif; /* Use the new font */
+    width: 75%; /* Ensure header takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+h1 {
+    font-size: 60px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Add left padding for better alignment */
+    text-align: left; /* Ensure text is aligned to the left */
+}

@@ -1,0 +1,125 @@
+/* Sidebar.css */
+.sidebar {
+    width: 250px; /* Set the width of the sidebar */
+    background-color: #222; /* Darker shade for the sidebar */
+    padding: 15px;
+    border-right: 1px solid #444; /* Slightly lighter border */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    color: white; /* Change text color to white */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Keep the sidebar fixed on the left */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+    font-family: 'Roboto', sans-serif; /* Change font family to Roboto */
+    border-top-right-radius: 40px; /* Round top right corner */
+    transition: width 0.3s; /* Smooth transition for width */
+}
+
+.sidebar.minimized {
+    width: 50px; /* Minimized width */
+}
+
+.sidebar-header {
+    display: flex; /* Use flexbox for header */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px;
+}
+
+.menu-icon {
+    width: 30px; /* Small icon size */
+    height: 30px; /* Small icon size */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 10px; /* Space between icon and title */
+    filter: brightness(0) invert(1); /* Change icon color to white */
+}
+
+.sidebar-header h1 {
+    margin: 0;
+    font-size: 24px; /* Larger font size for title */
+}
+
+/* Add this to your existing Sidebar.css */
+
+/* Styles for the AI features list */
+.ai-features {
+    margin-top: 30px; /* Space above the features */
+}
+
+.ai-features ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.ai-features li {
+    margin: 10px 0; /* Space between each feature */
+    color: white; /* Text color */
+    text-align: left; /* Ensure text is left aligned */
+}
+
+.bottom {
+    margin-top: auto; /* Push this section to the bottom */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left */
+    margin: 10px 0; /* Space around the buttons */
+}
+.button-icon {
+    width: 20px; /* Set the width of the icons */
+    height: 20px; /* Set the height of the icons */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: left; /* Align icon vertically with text */
+}
+/* Styles for sidebar buttons */
+/* Styles for sidebar buttons */
+.sidebar-button {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding around the button */
+    cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Full width for the button */
+    text-align: left; /* Left align text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 18px; /* Increase font size */
+    border-radius: 15px; /* Rounder borders */
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.sidebar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background on hover */
+}
+
+/* Icon styles */
+.button-icon {
+    width: 20px; /* Set the width of the icons */
+    height: 20px; /* Set the height of the icons */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon vertically with text */
+    fill: white; /* Change icon color to white (for SVG icons) */
+}
+
+/* If using font icons or images, set color or filter */
+.sidebar-button img {
+    filter: brightness(0) invert(1); /* Change icon color to white if using image */
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust the width for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; /* Full width on mobile */
+        position: relative; /* Change to relative */
+        height: auto; /* Adjust height */
+    }
+}
